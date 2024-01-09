@@ -114,6 +114,9 @@ span.price_tag{
 section{
     background-color: #f8f9fa;
 }
+.emphasis{
+    color: #F58020;
+}
 footer{
     background-color: #1e2020!important;
     border-top: 2px solid #F58020;

@@ -1,23 +1,23 @@
 .plan-card {
     background: #fff;
     width: 15rem;
-    padding-bottom: 9rem;
-    border-radius: 10px;
+    /* padding-bottom: 9rem; */
+    border-radius: .3rem;
     box-shadow: 0 10px 40px rgba(207, 212, 222, 0.3);
     font-family: "Poppins", sans-serif;
     position: relative;
   }
   .card-img{
-    width: 15rem;
-    height: 7.23rem;
-    background: #000;
-    border-top-left-radius: .7rem;
-    border-top-right-radius: .7rem;
+    width: 12rem !important;
+    height: 185px;
+
+    /* background: #000; */
+    border-top-left-radius: .3rem;
+    border-top-right-radius: 1rem;
   }
   .card-img img {
     width: 100%;
-    border-top-left-radius: .7rem;
-    border-top-right-radius: .7rem;
+    height: 100%;
   }
   .plan-card h2 {
     margin-bottom: 15px;
@@ -61,4 +61,96 @@
   }
   .duration_timer{
     font-size: 10px;
+  }
+  .item_details{
+    
+  }
+  
+  .card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box span::before {
+    content: '+Premium';
+    position: absolute;
+    width: 150%;
+    height: 30px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+    font-size: .8em;
+  }
+  
+  .card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+span.price_tag{
+    color: #F58020;
+}
+
+section{
+    background-color: #f8f9fa;
+}
+
+
+
+
+  @media screen and (max-width: 480px){
+    .benefits-list h5{
+        white-space: wrap !important;
+      }
+      .plan-card .card-img{
+        width: 150px !important;
+        /* height: 1rem !important; */
+    }
+  }
+  @media screen and (max-width: 540px){
+    .plan-card .card-img{
+        height: 6rem;
+    }
+
+  }
+  @media screen and (min-width: 992px){
+    .card-img{
+        width: 15rem !important;
+    }    
+  }
+  @media screen and (max-width: 992px) {
+    .plan-card{
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+    .plan-card .card-img {
+        display: flex;
+        /* width: 20rem; */
+        /* height: 9rem !important; */
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .benefits-list h5{
+        white-space: nowrap;
+      }
   }

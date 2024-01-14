@@ -66,6 +66,16 @@ section.category{
     height: 185px;
     border-top-left-radius: .3rem;
     border-top-right-radius: 1rem;
+    position: relative;
+  }
+  .card-img ::after{
+    content:url('https://api.iconify.design/ion/camera.svg?color=%23333&width=16');
+    color: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255, .2);
+    padding: .1em .3em;
   }
   .card-img img {
     width: 100%;

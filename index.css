@@ -11,6 +11,15 @@ a{
     font-weight: bolder;
     text-transform: uppercase;
 }
+button{
+  background-color: #F58020;
+    outline: none;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    padding: .5em 2em;
+    border-radius: 1rem;
+}
 section.category{
   padding-top: 3rem;
 }
@@ -115,7 +124,7 @@ section.category{
   }
   
   .card_box span::before {
-    content: '+Premium';
+    content: '+Featured';
     position: absolute;
     width: 140%;
     height: 30px;
@@ -152,6 +161,11 @@ section{
 }
 .emphasis{
     color: #F58020;
+}
+.latest_container{
+  box-shadow: 5px 8px 50px 10px rgba(0,0,0,0.1);
+  background-color:rgba(0,0,0,0.1) ;
+
 }
 footer{
     background-color: #1e2020!important;

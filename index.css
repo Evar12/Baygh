@@ -1,7 +1,8 @@
 body{
   background-color: #eee;
 }
-
+a{
+}
 .call-to-action .btn{
     width: 100%;
     background-color: #F58020;
@@ -13,6 +14,27 @@ body{
 section.category{
   padding-top: 3rem;
 }
+.categories{
+  width: 150px;
+  height: 150px;
+}
+.categories span a h6{
+  margin: 1rem .5rem;
+}
+.categories span a h6:hover{
+  transform: scale(1.2);
+}
+.categories span a{
+  color: #333;
+  text-decoration: none;
+}
+.iconify{
+  display: flex;
+  justify-content: center;
+  color: #F58020;
+  font-size: 50px;
+}
+
 .plan-card {
     background: #fff;
     width: 15rem;

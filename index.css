@@ -43,7 +43,15 @@ section.category{
   color: #F58020;
   font-size: 50px;
 }
+@media screen and (max-width: 480px) {
+  .iconify{
+    color: #ddd;
+  }
+  .iconify:hover{
+    color: #F58020;
 
+  }
+}
 .plan-card {
     background: #fff;
     width: 15rem;
@@ -165,7 +173,7 @@ section{
 .latest_container{
   box-shadow: 5px 8px 50px 10px rgba(0,0,0,0.1);
   background-color:rgba(0,0,0,0.1) ;
-
+  
 }
 footer{
     background-color: #1e2020!important;
